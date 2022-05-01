@@ -61,7 +61,7 @@ function reset() {
 function setRandomeTime() {
   paused = 0;
   startTime = millis();
-  timePassed = floor((millis() - startTime + settime) / 1000);
+  timePassed = floor((millis() - settime) / 1000);
   timer.innerHTML = convertSeconds(totalTime - timePassed);
 }
 
@@ -119,16 +119,6 @@ async function setFault(time) {
     // console.log("problem");
   }
 }
-
-async function playerNumber2(event) {
-  event.preventDefault();
-  try {
-    let name = document.getElementById("number2").value;
-    document.getElementById("faltaNumber2").innerHTML = name;
-  } catch (error) {
-    //console.log("problem");
-  }
-}
 async function setFault2(time) {
   try {
     paused = 0;
@@ -138,16 +128,6 @@ async function setFault2(time) {
     falta2.innerHTML = convertSeconds(minorFault + minorFaultPassed);
   } catch (error) {
     // console.log("problem");
-  }
-}
-
-async function playerNumber3(event) {
-  event.preventDefault();
-  try {
-    let name = document.getElementById("number3").value;
-    document.getElementById("faltaNumber3").innerHTML = name;
-  } catch (error) {
-    //console.log("problem");
   }
 }
 async function setFault3(time) {
@@ -161,15 +141,6 @@ async function setFault3(time) {
     // console.log("problem");
   }
 }
-async function playerNumber4(event) {
-  event.preventDefault();
-  try {
-    let name = document.getElementById("number4").value;
-    document.getElementById("faltaNumber4").innerHTML = name;
-  } catch (error) {
-    //console.log("problem");
-  }
-}
 async function setFault4(time) {
   try {
     paused = 0;
@@ -179,15 +150,6 @@ async function setFault4(time) {
     falta4.innerHTML = convertSeconds(minorFault + minorFaultPassed);
   } catch (error) {
     // console.log("problem");
-  }
-}
-async function playerNumber5(event) {
-  event.preventDefault();
-  try {
-    let name = document.getElementById("number5").value;
-    document.getElementById("faltaNumber5").innerHTML = name;
-  } catch (error) {
-    //console.log("problem");
   }
 }
 async function setFault5(time) {
@@ -201,15 +163,6 @@ async function setFault5(time) {
     // console.log("problem");
   }
 }
-async function playerNumber6(event) {
-  event.preventDefault();
-  try {
-    let name = document.getElementById("number6").value;
-    document.getElementById("faltaNumber6").innerHTML = name;
-  } catch (error) {
-    //console.log("problem");
-  }
-}
 async function setFault6(time) {
   try {
     paused = 0;
@@ -219,6 +172,56 @@ async function setFault6(time) {
     falta6.innerHTML = convertSeconds(minorFault + minorFaultPassed);
   } catch (error) {
     // console.log("problem");
+  }
+}
+
+async function playerNumber2(event) {
+  event.preventDefault();
+  try {
+    let name = document.getElementById("number2").value;
+    document.getElementById("faltaNumber2").innerHTML = name;
+  } catch (error) {
+    //console.log("problem");
+  }
+}
+
+async function playerNumber3(event) {
+  event.preventDefault();
+  try {
+    let name = document.getElementById("number3").value;
+    document.getElementById("faltaNumber3").innerHTML = name;
+  } catch (error) {
+    //console.log("problem");
+  }
+}
+
+async function playerNumber4(event) {
+  event.preventDefault();
+  try {
+    let name = document.getElementById("number4").value;
+    document.getElementById("faltaNumber4").innerHTML = name;
+  } catch (error) {
+    //console.log("problem");
+  }
+}
+
+async function playerNumber5(event) {
+  event.preventDefault();
+  try {
+    let name = document.getElementById("number5").value;
+    document.getElementById("faltaNumber5").innerHTML = name;
+  } catch (error) {
+    //console.log("problem");
+  }
+}
+
+async function playerNumber6(event) {
+  event.preventDefault();
+  try {
+    let name = document.getElementById("number6").value;
+    document.getElementById("faltaNumber6").innerHTML = name;
+  } catch (error) {
+    //console.log("problem");
   }
 }
 
